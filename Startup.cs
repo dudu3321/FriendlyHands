@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using FriendlyHands.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace FriendlyHands
 {
@@ -27,6 +29,11 @@ namespace FriendlyHands
             {
                 configuration.RootPath = "ClientApp/dist";
             });
+            
+            // using Microsoft.EntityFrameworkCore;
+            services.AddDbContext<FriendlyhandsContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
