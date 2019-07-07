@@ -1,6 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { LoginDialogData } from './login-dialog-data';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login-dialog',
@@ -10,15 +11,22 @@ import { LoginDialogData } from './login-dialog-data';
 export class LoginDialogComponent implements OnInit {
 
   constructor(public dialogRef: MatDialogRef<LoginDialogComponent>,
-              @Inject(MAT_DIALOG_DATA) public data: LoginDialogData) { }
+              @Inject(MAT_DIALOG_DATA) public data: LoginDialogData) {
+  }
 
   ngOnInit() {
   }
 
-  onCancelClick(): void{
+  onCancelClick(): void {
     this.dialogRef.close();
   }
-  onLoginClick(): void{
+  onLoginClick(): void {
+
+  }
+  onSignUpClick(): void {
+
+  }
+  onForgotClick(): void {
 
   }
 }

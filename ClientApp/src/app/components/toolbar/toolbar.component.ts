@@ -23,7 +23,8 @@ export class ToolbarComponent implements OnInit {
   // Login dialog event
   openLoginDialog(): void{
     const dialogRef = this.dialog.open(LoginDialogComponent, {
-      width: '250px',
+      width: '450px',
+      height: '500px',
       data: {email: this.email, password: this.password}
     });
 

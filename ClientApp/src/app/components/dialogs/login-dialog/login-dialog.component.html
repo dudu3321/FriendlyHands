@@ -1,15 +1,19 @@
 <h1 mat-dialog-title>登入</h1>
-<div mat-dialog-content>
-  <p>電子郵件地址</p>
+<div mat-dialog-content class="post-form">
   <mat-form-field>
-    <input matInput [(ngModel)]="this.data.email">
+    <input matInput type="email" placeholder="電子郵件地址" [(ngModel)]="this.data.email" required>
   </mat-form-field>
-  <p>密碼</p>
   <mat-form-field>
-    <input matInput [(ngModel)]="this.data.password">
+    <input matInput type="password" placeholder="密碼" [(ngModel)]="this.data.password" required>
   </mat-form-field>
 </div>
 <div mat-dialog-actions>
-  <button mat-button color="primary" (click)="onCancelClick()">取消</button>
-  <button mat-button color="primary" (click)="onLoginClick()">登入</button>
+  <button mat-button class="padding-left-remove" color="primary" (click)="onForgotClick()">忘記密碼?</button>
+  <div class="button-row">
+    <button mat-button class="padding-left-remove" color="primary" (click)="onSignUpClick()">註冊帳號</button>
+    <div style="float: right;">
+      <button mat-flat-button (click)="onCancelClick()">取消</button>
+      <button mat-flat-button color="primary" (click)="onLoginClick()">登入</button>
+    </div>
+  </div>
 </div>

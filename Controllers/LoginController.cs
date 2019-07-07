@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FriendlyHands.Controllers {
 
-    [Route ("api/[controllser]")]
+    [Route ("api/[controller]")]
     public class LoginController : Controller {
         public LoginController () {
         }

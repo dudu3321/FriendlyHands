@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatSidenavModule, MatToolbarModule, MatSlideToggleModule
-  , MatButtonModule, MatDialogModule, MatFormFieldModule } from '@angular/material';
+  , MatButtonModule, MatDialogModule, MatFormFieldModule, MAT_LABEL_GLOBAL_OPTIONS, MatInputModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginDialogComponent } from '../components/dialogs/login-dialog/login-dialog.component';
 
@@ -19,10 +19,10 @@ import { LoginDialogComponent } from '../components/dialogs/login-dialog/login-d
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSlideToggleModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule
   ],
-  entryComponents:[
-    LoginDialogComponent
-  ],
+  providers: [
+  ]
 })
 export class SharedMaterialModuleModule { }

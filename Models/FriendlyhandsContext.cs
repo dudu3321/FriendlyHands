@@ -7,31 +7,20 @@ namespace FriendlyHands.Models
 {
     public partial class FriendlyhandsContext : DbContext
     {
-        public IConfiguration Configuration { get; }
-
-        public FriendlyhandsContext(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-
         public FriendlyhandsContext(DbContextOptions<FriendlyhandsContext> options)
             : base(options)
         {
         }
 
-        public virtual DbSet<Account> Account { get; set; }
+        public virtual DbSet<Accounts> Accounts { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            if (!optionsBuilder.IsConfigured)
-            { 
-                optionsBuilder.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
-            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Account>(entity =>
+            modelBuilder.Entity<Accounts>(entity =>
             {
                 entity.HasKey(e => e.SerialNo);
 

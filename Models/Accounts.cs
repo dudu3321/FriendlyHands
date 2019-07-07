@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace FriendlyHands.Models
 {
-    public partial class Account
+    public partial class Accounts
     {
         public int SerialNo { get; set; }
         public string UserName { get; set; }
