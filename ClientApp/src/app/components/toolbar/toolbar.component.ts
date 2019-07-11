@@ -1,16 +1,13 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { LoginDialogComponent } from '../dialogs/login-dialog/login-dialog.component';
-import { LoginDialogData } from '../dialogs/login-dialog/login-dialog-data';
+import { LoginDialogData } from '../../models/login-dialog-data';
 @Component({
   selector: 'app-toolbar',
   templateUrl: './toolbar.component.html',
   styleUrls: ['./toolbar.component.scss']
 })
 export class ToolbarComponent implements OnInit {
-
-  email: string;
-  password: string;
 
   constructor(public dialog: MatDialog) { }
 
@@ -24,8 +21,7 @@ export class ToolbarComponent implements OnInit {
   openLoginDialog(): void{
     const dialogRef = this.dialog.open(LoginDialogComponent, {
       width: '450px',
-      height: '500px',
-      data: {email: this.email, password: this.password}
+      height: '500px'
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -41,7 +37,7 @@ export class ToolbarComponent implements OnInit {
 
   scrollEvent(): void {
     if (scrollY > 0) {
-      this.headerToolbar[0].setAttribute('style', 'height:62px !important');
+      this.headerToolbar[0].setAttribute('style', 'height:62px !important; opacity: 0.9;');
     } else {
       this.headerToolbar[0].removeAttribute('style');
     }
