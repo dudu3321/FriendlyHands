@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatSidenavModule, MatToolbarModule, MatSlideToggleModule
-  , MatButtonModule, MatDialogModule, MatFormFieldModule, MAT_LABEL_GLOBAL_OPTIONS, MatInputModule } from '@angular/material';
+  , MatButtonModule, MatDialogModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoginDialogComponent } from '../components/dialogs/login-dialog/login-dialog.component';
+
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
     BrowserAnimationsModule,
-    MatDialogModule,
+    MatDialogModule
   ],
   exports: [
     MatButtonModule,

@@ -1,4 +1,13 @@
 <app-toolbar></app-toolbar>
-<agm-map [latitude]="lat" [longitude]="lng">
+<div class="full-vs-div">
+  <img src="../assets/img/home_img.jpg" alt="" class="home-img">
+  <button mat-stroked-button color="warn" class="home-img-button" (click)="onStartClick()">讓我們開始吧</button>
+</div>
+<div class="full-vs-div" id="start">
+  <div>
+      
+  </div>
+  <agm-map [latitude]="lat" [longitude]="lng">
     <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
   </agm-map>
+</div>

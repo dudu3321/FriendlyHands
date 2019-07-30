@@ -11,6 +11,8 @@ import { SignUpDialogComponent } from './components/dialogs/sign-up-dialog/sign-
 import { HttpClientModule } from '@angular/common/http';
 import { LoginService } from './services/loginService/login.service';
 import { AgmCoreModule } from '@agm/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +22,7 @@ import { AgmCoreModule } from '@agm/core';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     SharedMaterialModuleModule,
     FormsModule,
@@ -27,14 +30,14 @@ import { AgmCoreModule } from '@agm/core';
     HttpClientModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCvtv3ZX189rPtiJkmf2M63FVZlwiwd02k'
-    })
+    }),
   ],
   providers: [
     {
       provide: MAT_DIALOG_DEFAULT_OPTIONS,
       useValue: { hasBackdrop: true }
     },
-    LoginService
+    LoginService,
   ],
   entryComponents: [
     LoginDialogComponent
