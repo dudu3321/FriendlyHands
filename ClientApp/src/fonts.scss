@@ -1,8 +1,17 @@
 @font-face{
-  font-family: 'TaipeiSans';
-  src: url('/ClientApp/src/assets/fonts/TaipeiSansTCBeta-Regular.ttf');
+  font-family: 'Pacifico';
+  src: url('/assets/fonts/Pacifico.ttf');
 }
 
-*{
-  font-family: 'TaipeiSans', 'arial', sans-serif;
+//中文字體
+@font-face {
+  font-family: custom-serif;
+  src: url('/assets/fonts/TaipeiSansTCBeta-Regular.ttf');
+  unicode-range: U+4E00-9FFF
+}
+//英文字體
+@font-face {
+  font-family: custom-serif;
+  src: local(nunito), local("arial");
+  unicode-range: U+00-024F;
 }

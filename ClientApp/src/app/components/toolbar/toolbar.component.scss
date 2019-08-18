@@ -30,7 +30,7 @@
 
 .link-decoration-remove {
   text-decoration: none;
-  color: #e91e63;
+  color: white;
 }
 
 .header-toolbar-title>* {
@@ -38,7 +38,7 @@
   font-size: 30px;
   font-weight: 800;
   padding-right: 30px;
-
+  font-family: 'Pacifico';
 }
 
 .header-toolbar-list>* {
@@ -49,12 +49,16 @@
 }
 
 .header-toolbar-list>*:hover {
-  color: #3f51b5;
+  color: gray;
 }
 
 .header-toolbar-account {
   display: flex;
   align-items: center;
+}
+
+.home-helpus-button{
+  width: 80px;
 }
 
 @media only screen and (max-width: 732px) {

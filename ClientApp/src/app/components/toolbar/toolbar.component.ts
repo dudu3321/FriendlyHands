@@ -37,7 +37,7 @@ export class ToolbarComponent implements OnInit {
 
   scrollEvent(): void {
     if (scrollY > 0) {
-      this.headerToolbar[0].setAttribute('style', 'height:62px !important; opacity: 0.9;');
+      this.headerToolbar[0].setAttribute('style', 'height:62px !important;');
     } else {
       this.headerToolbar[0].removeAttribute('style');
     }

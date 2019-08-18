@@ -1,6 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+// @import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+// @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+// @import "~@angular/material/prebuilt-themes/purple-green.css";
+// @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 
+
+
+* {
+  font-family: custom-serif, sans-serif;
+}
 
 body {
   margin: 0;
@@ -8,4 +16,22 @@ body {
 
 .button-row>button {
   margin-right: 8px;
+}
+
+.action-button{
+  border: 2px solid #ff4742;
+  background-color: #ff4742;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+  color:white;
+  border-radius: 3px;
+  text-align: center;
+  padding: .8em;
+  width: 200px;
+}
+
+.action-button:hover{
+  color:#ff4742;
+  background-color: rgb(0,0,0,0);
 }
