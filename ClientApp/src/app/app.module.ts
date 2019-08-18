@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginService } from './services/loginService/login.service';
 import { AgmCoreModule } from '@agm/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SpotFilterComponent } from './components/spot-filter/spot-filter.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LoginDialogComponent,
     ToolbarComponent,
     SignUpDialogComponent,
+    SpotFilterComponent,
   ],
   imports: [
     BrowserModule,
