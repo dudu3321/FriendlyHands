@@ -1,2 +1,5 @@
 1. update db model:
 dotnet ef dbcontext scaffold "Server=DBNAME;Database=Friendlyhands;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models
+
+2. env
+dotnet run --environment "Development"
