@@ -22,8 +22,6 @@
     "@angular/platform-browser": "~8.0.1",
     "@angular/platform-browser-dynamic": "~8.0.1",
     "@angular/router": "~8.0.1",
-    "@nebular/eva-icons": "4.1.2",
-    "eva-icons": "^1.1.1",
     "httpclient": "^0.1.0",
     "linq": "^3.2.0",
     "ng-animate-scroll": "^7.1.0",
