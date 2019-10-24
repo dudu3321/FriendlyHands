@@ -10,7 +10,8 @@ a {
   left: 0;
   right: 0;
   z-index: 10000;
-  background-color: rgba(54, 54, 54, .2);
+  background-color: rgba(54, 54, 54, .5);
+  transition: all .3s ease-out;
 }
 
 .header-toolbar-notontop {
@@ -24,8 +25,7 @@ a {
 
 .header-toolbar-title a {
   display: inline-block;
-  padding-right: 30px;
-  transition: transform 1s;
+  transition: all .3s ease-out;
   width: 100%;
 }
 
@@ -34,7 +34,7 @@ a {
   font-family: 'Pacifico';
   font-size: 30px;
   font-weight: 800;
-  transition: transform 1s;
+  transition: all .3s ease-out;
 }
 
 // .header-toolbar-list * {
@@ -53,10 +53,13 @@ a {
   right: 0;
   width: 100%;
   text-align: right;
+  transition: all .3s ease-out;
 }
 
 .header-toolbar-login a {
+  display: inline-block;
   width: 80px;
+  transition: all .3s ease-out;
 }
 
 
@@ -70,9 +73,8 @@ a {
 
 @media only screen and (max-width: 732px) {
 
-  .header-toolbar-list,
-  .header-toolbar-login {
-    visibility: hidden;
+  .header-toolbar-login a {
+    padding: 5px;
   }
 
   .header-toolbar-title a{
