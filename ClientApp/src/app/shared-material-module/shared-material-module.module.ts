@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatSidenavModule, MatToolbarModule, MatSlideToggleModule
-  , MatButtonModule, MatDialogModule, MatFormFieldModule, MatInputModule } from '@angular/material';
+  , MatButtonModule, MatDialogModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatAutocompleteModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,14 +14,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatDialogModule
   ],
   exports: [
+    BrowserAnimationsModule,
     MatButtonModule,
     MatButtonModule,
     MatSidenavModule,
-    BrowserAnimationsModule,
     MatToolbarModule,
     MatSlideToggleModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule,
+    MatAutocompleteModule
   ],
   providers: [
   ]

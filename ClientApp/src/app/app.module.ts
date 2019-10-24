@@ -13,6 +13,8 @@ import { LoginService } from './services/loginService/login.service';
 import { AgmCoreModule } from '@agm/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SpotFilterComponent } from './components/spot-filter/spot-filter.component';
+import { MainComponent } from './components/main/main.component';
+import { GoogleMapDrawerComponent } from './components/google-map-drawer/google-map-drawer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { SpotFilterComponent } from './components/spot-filter/spot-filter.compon
     ToolbarComponent,
     SignUpDialogComponent,
     SpotFilterComponent,
+    MainComponent,
+    GoogleMapDrawerComponent,
   ],
   imports: [
     BrowserModule,

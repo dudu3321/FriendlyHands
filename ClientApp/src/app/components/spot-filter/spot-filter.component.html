@@ -1,0 +1,26 @@
+<div class="container">
+  <div>
+    <h4>Location</h4>
+    <mat-form-field>
+      <input type="text" matInput [formControl]="myControl" [matAutocomplete]="locationAuto">
+    </mat-form-field>
+    <mat-autocomplete #locationAuto="matAutocomplete">
+      <mat-option *ngFor="let location of locations" [value]="location">{{location}}</mat-option>
+    </mat-autocomplete>
+  </div>
+  <div>
+    <h4>商品類型</h4>
+    <mat-form-field>
+      <input type="text" matInput [formControl]="myControl" [matAutocomplete]="productAuto">
+    </mat-form-field>
+    <mat-autocomplete #productAuto="matAutocomplete">
+      <mat-option *ngFor="let productType of productTypes" [value]="productType">{{productType}}</mat-option>
+    </mat-autocomplete>
+  </div>
+  <div>
+    <h4>關鍵字</h4>
+    <mat-form-field>
+      <input type="text" matInput [formControl]="myControl">
+    </mat-form-field>
+  </div>
+</div>

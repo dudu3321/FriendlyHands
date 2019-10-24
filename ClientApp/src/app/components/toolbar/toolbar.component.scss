@@ -1,11 +1,6 @@
-.header-toolbar-phonelist {
-  visibility: hidden;
-}
-
-.header-toolbar-login {
-  padding: 0 30px 0 15px;
-  position: absolute;
-  right: 0;
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .header-toolbar {
@@ -15,56 +10,75 @@
   left: 0;
   right: 0;
   z-index: 10000;
-  transition: all .3s ease-out;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(54, 54, 54, .2);
 }
+
+.header-toolbar-notontop {
+  height:62px !important;
+  background-color: rgba(54, 54, 54, .5);
+}
+
+.header-toolbar-title{
+  width: 100%;
+}
+
+.header-toolbar-title a {
+  display: inline-block;
+  padding-right: 30px;
+  transition: transform 1s;
+  width: 100%;
+}
+
+.header-toolbar-title span {
+  display: inline-block;
+  font-family: 'Pacifico';
+  font-size: 30px;
+  font-weight: 800;
+  transition: transform 1s;
+}
+
+// .header-toolbar-list * {
+//   font-size: 20px;
+//   font-weight: 800;
+//   padding: 0 15px 0 15px;
+// }
+
+// .header-toolbar-list *:hover {
+//   color: gray;
+// }
+
+.header-toolbar-login {
+  padding: 0 30px 0 15px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  text-align: right;
+}
+
+.header-toolbar-login a {
+  width: 80px;
+}
+
 
 .header-toolbar-title,
 .header-toolbar-list,
 .header-toolbar-login {
-  display: flex;
-  align-items: center;
   line-height: 100%;
+  width: 100%;
 }
 
-
-.link-decoration-remove {
-  text-decoration: none;
-  color: white;
-}
-
-.header-toolbar-title>* {
-  @extend .link-decoration-remove;
-  font-size: 30px;
-  font-weight: 800;
-  padding-right: 30px;
-  font-family: 'Pacifico';
-}
-
-.header-toolbar-list>* {
-  @extend .link-decoration-remove;
-  font-size: 20px;
-  font-weight: 800;
-  padding: 0 15px 0 15px;
-}
-
-.header-toolbar-list>*:hover {
-  color: gray;
-}
-
-.header-toolbar-account {
-  display: flex;
-  align-items: center;
-}
-
-.home-helpus-button{
-  width: 80px;
-}
 
 @media only screen and (max-width: 732px) {
 
   .header-toolbar-list,
   .header-toolbar-login {
     visibility: hidden;
+  }
+
+  .header-toolbar-title a{
+    transform: translateX(50%);
+  }
+  .header-toolbar-title span{
+    transform: translateX(-50%);
   }
 }

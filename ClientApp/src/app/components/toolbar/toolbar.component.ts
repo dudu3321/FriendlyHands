@@ -37,9 +37,13 @@ export class ToolbarComponent implements OnInit {
 
   scrollEvent(): void {
     if (scrollY > 0) {
-      this.headerToolbar[0].setAttribute('style', 'height:62px !important;');
+      this.headerToolbar[0].classList.add('header-toolbar-notontop');
+      this.headerToolbar[0].children[0].children[0].setAttribute('style', 'color: #F45B69;');
+      this.headerToolbar[0].children[1].setAttribute('style', 'padding: 0 10px 0 15px');
     } else {
-      this.headerToolbar[0].removeAttribute('style');
+      this.headerToolbar[0].classList.remove('header-toolbar-notontop');
+      this.headerToolbar[0].children[0].children[0].removeAttribute('style');
+      this.headerToolbar[0].children[1].removeAttribute('style');
     }
   }
 }
