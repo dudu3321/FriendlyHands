@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SpotFilterComponent } from './spot-filter.component';
+import { LocationFilterComponent } from './location-filter.component';
 
-describe('SpotFilterComponent', () => {
-  let component: SpotFilterComponent;
-  let fixture: ComponentFixture<SpotFilterComponent>;
+describe('LocationFilterComponent', () => {
+  let component: LocationFilterComponent;
+  let fixture: ComponentFixture<LocationFilterComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SpotFilterComponent ]
+      declarations: [ LocationFilterComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SpotFilterComponent);
+    fixture = TestBed.createComponent(LocationFilterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
